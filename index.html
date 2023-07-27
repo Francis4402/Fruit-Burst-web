@@ -59,8 +59,8 @@
                 
                 <nav class="bg-white border-gray-200 lg:hidden md:mt-12">
                     <div class="md:max-w-[760px] flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="#" class="flex items-center">
-                        <img src="./images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <a href="#" class="flex items-center gap-2">
+                        <img src="./images/logo.png" class="h-8" alt="Flowbite Logo" />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">Fruit Burst</span>
                     </a>
                     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-black dark:hover:bg-gray-300 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -100,62 +100,58 @@
   
 
 
-                
-                <div class="carousel flex lg:max-w-[1440px] xl:max-w-[1280px] md:max-w-[760px] lg:mx-auto md:mx-auto mx-3 items-center relative md:mt-14 mt-7">
 
-                    <div id="slide1" class="carousel-item relative w-full bg-gradient-to-b from-[#121212b3] to-[#12121280] rounded-lg">
-                        <img src="./images/banner1.png" class="w-full mix-blend-overlay" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="md:hidden w-6 h-6 rounded-full text-white bg-black border-none hover:bg-white/40 hover:text-black flex justify-center">❮</a> 
-                        <a href="#slide2" class="md:hidden w-6 h-6 rounded-full text-white bg-black border-none hover:bg-white/40 hover:text-black flex justify-center">❯</a>
+              <div id="controls-carousel" class="relative w-full lg:max-w-[1440px] md:max-w-[910px] max-w-[350px] mx-auto" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg lg:h-screen md:h-[430px] lg:mt-0">
 
-                        <a href="#slide4" class="md:flex hidden btn btn-circle text-white bg-black border-none hover:bg-white/40 hover:text-black">❮</a> 
-                        <a href="#slide2" class="md:flex hidden btn btn-circle text-white bg-black border-none hover:bg-white/40 hover:text-black">❯</a>    
-                        </div>
-                    </div> 
-                    <div id="slide2" class="carousel-item relative w-full bg-gradient-to-b from-[#121212b3] to-[#12121280] rounded-lg">
-                        <img src="./images/banner2.png" class="w-full mix-blend-overlay" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="md:hidden w-6 h-6 rounded-full text-white bg-black border-none hover:bg-white/40 hover:text-black flex justify-center">❮</a> 
-                        <a href="#slide3" class="md:hidden w-6 h-6 rounded-full text-white bg-black border-none hover:bg-white/40 hover:text-black flex justify-center">❯</a>
+                    <div class="hidden duration-700 ease-in-out bg-gradient-to-b" data-carousel-item>
+                        <img src="./images/banner1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
 
-                        <a href="#slide1" class="md:flex hidden btn btn-circle text-white bg-black border-none hover:bg-white/40 hover:text-black">❮</a> 
-                        <a href="#slide3" class="md:flex hidden btn btn-circle text-white bg-black border-none hover:bg-white/40 hover:text-black">❯</a> 
-                        </div>
-                    </div> 
-                    <div id="slide3" class="carousel-item relative w-full bg-gradient-to-b from-[#121212b3] to-[#12121280] rounded-lg">
-                        <img src="./images/banner3.png" class="w-full mix-blend-overlay" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="md:hidden w-6 h-6 rounded-full text-white bg-black border-none hover:bg-white/40 hover:text-black flex justify-center">❮</a> 
-                        <a href="#slide4" class="md:hidden w-6 h-6 rounded-full text-white bg-black border-none hover:bg-white/40 hover:text-black flex justify-center">❯</a>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="./images/banner2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
 
-                        <a href="#slide2" class="md:flex hidden btn btn-circle text-white bg-black border-none hover:bg-white/40 hover:text-black">❮</a> 
-                        <a href="#slide4" class="md:flex hidden btn btn-circle text-white bg-black border-none hover:bg-white/40 hover:text-black">❯</a> 
-                        </div>
-                    </div> 
-                    <div id="slide4" class="carousel-item relative w-full bg-gradient-to-b from-[#121212b3] to-[#12121280] rounded-lg">
-                        <img src="./images/banner4.png" class="w-full mix-blend-overlay" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="md:hidden w-6 h-6 rounded-full text-white bg-black border-none hover:bg-white/40 hover:text-black flex justify-center">❮</a> 
-                        <a href="#slide1" class="md:hidden w-6 h-6 rounded-full text-white bg-black border-none hover:bg-white/40 hover:text-black flex justify-center">❯</a>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./images/banner3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
 
-                        <a href="#slide3" class="md:flex hidden btn btn-circle text-white bg-black border-none hover:bg-white/40 hover:text-black">❮</a> 
-                        <a href="#slide1" class="md:flex hidden btn btn-circle text-white bg-black border-none hover:bg-white/40 hover:text-black">❯</a>
-                        </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./images/banner4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                 </div>
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+              </div>
+
 
                 
                 
 
-                <div class="lg:max-w-[1196px] xl:max-w-[1050px] md:max-w-[580px] max-w-[230px] mx-auto flex-col items-center text-center lg:-mt-[488px] md:-mt-[260px] -mt-[138px] relative z-50">
-                    <h1 class="text-white text-2xl lg:text-7xl md:text-4xl font-extrabold lg:mb-6 md:mb-3 mb-1">Exotic tastes at your <br>doorstep</h1>
+                <div class="lg:max-w-[1196px] xl:max-w-[1050px] md:max-w-[680px] max-w-[230px] mx-auto flex-col items-center text-center lg:-mt-[650px] md:-mt-[360px] -mt-[178px] relative z-50">
+                    <h1 class="text-white text-2xl lg:text-7xl md:text-5xl font-extrabold lg:mb-8 md:mb-3 mb-1">Exotic tastes at your <br>doorstep</h1>
 
-                    <p class="text-white text-xs font-medium lg:text-xl md:text-sm lg:mb-8 md:mb-4 mb-2">We supply highly quality organic products</p>
+                    <p class="text-white text-xs font-medium lg:text-xl md:text-lg lg:mb-10 md:mb-6 mb-2">We supply highly quality organic products</p>
 
-                    <a href="#"><button class="lg:px-7 lg:py-4 md:px-6 md:py-3 mx-auto bg-[#F85569] hover:bg-[#F85578] border-none text-white lg:mb-20 md:mb-7 lg:text-lg md:text-sm px-4 py-2 text-base md:font-extrabold font-bold rounded-md hover:scale-105 duration-200">Shop now</button></a>
+                    <a href="#"><button class="lg:px-7 lg:py-4 md:px-6 md:py-3 mx-auto bg-[#F85569] hover:bg-[#F85578] border-none text-white lg:mb-24 md:mb-10 lg:text-lg md:text-sm px-4 py-2 text-base md:font-extrabold font-bold rounded-md hover:scale-105 duration-200">Shop now</button></a>
 
-                    <div class="bg-white lg:w-[1196px] lg:py-9 md:p-5 md:px-8 mx-auto rounded-lg shadow-lg md:flex hidden">
+                    <div class="bg-white lg:py-9 md:p-5 md:px-8 mx-auto rounded-lg shadow-lg md:flex hidden">
                         
                         <table align="center">
                             <tr>
@@ -749,7 +745,7 @@
                     </div>
 
 
-                    <div class="flex list-none md:space-x-10 space-x-5 md:mb-36 mb-9">
+                    <div class="flex list-none md:space-x-10 space-x-4 md:mb-36 mb-9">
                         <li class="hover:scale-105 duration-200"><a href="https://www.twitter.com"><svg class="md:w-10 md:h-10 w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_12_5266)">
                               <path d="M40 7.5975C38.5125 8.25 36.9275 8.6825 35.275 8.8925C36.975 7.8775 38.2725 6.2825 38.8825 4.36C37.2975 5.305 35.5475 5.9725 33.6825 6.345C32.1775 4.7425 30.0325 3.75 27.6925 3.75C23.1525 3.75 19.4975 7.435 19.4975 11.9525C19.4975 12.6025 19.5525 13.2275 19.6875 13.8225C12.87 13.49 6.8375 10.2225 2.785 5.245C2.0775 6.4725 1.6625 7.8775 1.6625 9.39C1.6625 12.23 3.125 14.7475 5.305 16.205C3.9875 16.18 2.695 15.7975 1.6 15.195C1.6 15.22 1.6 15.2525 1.6 15.285C1.6 19.27 4.4425 22.58 8.17 23.3425C7.5025 23.525 6.775 23.6125 6.02 23.6125C5.495 23.6125 4.965 23.5825 4.4675 23.4725C5.53 26.72 8.545 29.1075 12.13 29.185C9.34 31.3675 5.7975 32.6825 1.9625 32.6825C1.29 32.6825 0.645 32.6525 0 32.57C3.6325 34.9125 7.9375 36.25 12.58 36.25C27.67 36.25 35.92 23.75 35.92 12.915C35.92 12.5525 35.9075 12.2025 35.89 11.855C37.5175 10.7 38.885 9.2575 40 7.5975Z" fill="white"/>
